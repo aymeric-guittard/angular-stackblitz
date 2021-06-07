@@ -29,6 +29,16 @@ const routes: Routes = [
       }
     ]
   },
+  /*
+   * LAZY LOADED MODULE
+   */
+  {
+    path: 'products',
+    loadChildren: () =>
+      import('./pages/lazy-loaded/products/products.module').then(
+        m => m.ProductsModule
+      )
+  },
   {
     path: '',
     pathMatch: 'full',
