@@ -1,3 +1,3 @@
-# angular-ivy-efbh8r
+# Angular Stackblitz Proof of Concept
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-efbh8r)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-stackblitz-poc-guittard)
