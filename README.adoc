@@ -1,0 +1,14 @@
+# Angular Stackblitz Proof of Concept
+
+I wanted to see if StackBlitz was a good enough solution to write Angular apps.
+
+StackBlitz works well. I think you could develop a small application inside it. There are, however, a few important problems:
+
+. The Angular generator doesn't respect the `angular.json` file. For example, it will generate components using a CSS style, when the `angular.json` file specifies a SCSS style. You then have to rename the style files, and any reference to these files.
+. You can't use the Angular Generator inside any folder. You can only use it inside the root folder. You then have to move your components around, and fix the imports.
+. When commiting, Stackblitz creates two commits :
+- A first one, with your changes, and the message you typed.
+- A second one, with no changes, and the number of files you added/deleted/edited.
+. You can't launch your Unit Tests by default. You have to embed your Unit Testing solution inside your app. You also can't require all files, you have to require them one by one.
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-stackblitz-poc-guittard)
