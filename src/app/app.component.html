@@ -1,5 +1,16 @@
 <app-hello name="{{ name }}">
 </app-hello>
 <p>
-  Start editing to see <span>some </span><span id="magic">magic</span> happen :)
+  This is a Routing example. There are custom routes, with a 404 page, a lazy loaded page, and nested routing.
 </p>
+<p>
+  Each time there is an horizontal ruler, there is a router-outlet right under it.
+</p>
+<nav>
+  <a routerLink="home" routerLinkActive="myActiveClass">Home</a>
+  <a routerLink="foo" routerLinkActive="myActiveClass">Non existing page</a>
+  <a routerLink="products" routerLinkActive="myActiveClass">Lazy loaded page</a>
+  <a routerLink="nested" routerLinkActive="myActiveClass">Nested page</a>
+</nav>
+<hr>
+<router-outlet></router-outlet>
