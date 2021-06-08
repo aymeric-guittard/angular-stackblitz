@@ -1,5 +1,14 @@
 <p>
-  parent works!
+  This is a component with a nested router-outlet.
 </p>
+<p>
+  Note : you can customize the active route's style.
+</p>
+<nav>
+  <ul>
+    <li><a routerLink="first" routerLinkActive="activeLinkClass">First Child</a></li>
+    <li><a routerLink="second" routerLinkActive="activeLinkClass">Second Child</a></li>
+  </ul>
+</nav>
 <hr>
 <router-outlet>

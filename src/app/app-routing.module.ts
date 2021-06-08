@@ -24,6 +24,11 @@ const routes: Routes = [
         component: SecondChildComponent // another child route component that the router renders
       },
       {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'first'
+      },
+      {
         component: NotFoundComponent,
         path: '**' // if we don't catch these, the path "nested/doesntexist" will not display the parent component at all
       }
